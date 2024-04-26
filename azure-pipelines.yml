@@ -2,7 +2,9 @@ trigger:
 - main  # Change this to the branch name you want to trigger the deployment from
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: default  # Enter your agent pool name or press Enter for default
+  demands:
+  - Agent.Name -equals vmware  # Specify your agent name or remove this line if not needed
 
 steps:
 - task: Kubernetes@1
