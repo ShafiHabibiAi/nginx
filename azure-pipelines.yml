@@ -13,5 +13,5 @@ steps:
     connectionType: 'Kubernetes Service Connection'
     kubernetesServiceEndpoint: 'eks'  # Update this with your Kubernetes service connection name
     command: 'apply'
-    arguments: '-f ./nginx.yaml'  # Update this with the path to your deployment file
+    arguments: '-f nginx.yml'  # Update this with the path to your deployment file
     secretType: 'None'  # Change this if you're using any secrets
