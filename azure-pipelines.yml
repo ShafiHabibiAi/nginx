@@ -9,7 +9,7 @@ steps:
   displayName: 'Kubectl apply'
   inputs:
     connectionType: 'Azure Resource Manager'
-    azureSubscriptionEndpoint: '<Name of your Azure service connection>'
+    azureSubscriptionEndpoint: 'azure'
     command: 'apply'
     arguments: '-f ./nginx.yaml'  # Update this with the path to your deployment file
     secretType: 'None'  # Change this if you're using any secrets
